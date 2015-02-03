@@ -7,10 +7,6 @@ Script en bash para generar certificados key, csr, crt, pem con [OpenSSL](http:/
 Uso
 ===
 
-Ajustar la ubicación de OpenSSL en el sistema. 
-
-Utiliza - /usr/bin/openssl
-
 Definir el nombre de archivo para los certificados que se van a generar
 
 Utiliza - "server"
@@ -35,8 +31,12 @@ Actualizar los valores definidos en el script
 - CN="Common Name"
 - emailAddress="."
 
+Cambiar los permisos del script para que sea ejecutable.
 
-Una vez que se establezcan los valores, en la carpeta donde se quieren generar los certificados teclear:
+$chmod +x certs.sh
+
+Una vez que se establezcan los valores y permisos, posicionar el script en la carpeta donde se quieren generar los certificados
+y teclear:
 
 $ ./certs.sh
 
